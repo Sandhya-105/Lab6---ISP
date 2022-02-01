@@ -13,7 +13,8 @@
  Then, an external data source containing the coastline of all the european nations. It's in geojson format. 
  
  ## UML Diagram 
- ![image](https://user-images.githubusercontent.com/94603960/151997751-d079227d-f068-4011-9608-8003aecd442f.png)
+ ![image](https://user-images.githubusercontent.com/94603960/152009797-95a1a23a-4219-40d3-b716-b49f49b74772.png)
+
 
 
 ### City class: 
