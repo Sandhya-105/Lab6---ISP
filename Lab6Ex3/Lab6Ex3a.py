@@ -22,9 +22,9 @@ def minBoundingBox(polylines):
         for coords in line:
           xArray.append(coords[0])
           yArray.append(coords[1])
-    topleftpt = Point(min(xArray)- 50, max(yArray)+ 50)
-    width = (max(xArray) -min(xArray)) + 100
-    height = (max(yArray) - min(yArray)) + 100
+    topleftpt = Point(min(xArray), min(yArray))
+    width = (max(xArray) -min(xArray))
+    height = (max(yArray) - min(yArray))
     bbox = Rectangle(topleftpt, width, height)
     return bbox
 
@@ -81,4 +81,7 @@ for lines in c_lines:
         yArray.append(coords.getY())
     
     plt.plot(xArray, yArray, c = lines.getstrokeColor())
+    
+plt.xticks(range(0,1100,200))
+plt.yticks(range(0,1100,200))
     

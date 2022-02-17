@@ -11,6 +11,8 @@ from Point import Point
 from Rectangle import Rectangle
 import matplotlib.pyplot as plt
 
+
+
 cities = []
 # ///////////////////////////////////////////////  Functions //////////////////////////////////////////////////////////
 # creating minimum bounding box
@@ -20,15 +22,16 @@ def minBoundingBox(cities):
     for city in cities:
         xArray.append(city.getLocation().getX())
         yArray.append(city.getLocation().getY())
-    topleftpt = Point(min(xArray)-50, max(yArray)+50)
-    width = (max(xArray) -min(xArray)) + 100
-    height = (max(yArray) - min(yArray)) + 100
+    topleftpt = Point(min(xArray), min(yArray))
+    width = (max(xArray) -min(xArray))
+    height = (max(yArray) - min(yArray))
     bbox = Rectangle(topleftpt, width, height)
     return bbox
 
 # creating the plotting surface
 fig, ax = plt.subplots()
 ax.set_aspect("equal")
+
 
 # open the CSV file
 with open("cities.csv", mode = 'r') as file:
@@ -74,6 +77,9 @@ for city in cities:
 for city in cities:
     plt.scatter(city.getLocation().getX(), city.getLocation().getY(), c = city.getLocation().getfillColor())
     plt.text(city.getLocation().getX(), city.getLocation().getY(), city.getName())
+    
+plt.xticks(range(0,1100,200))
+plt.yticks(range(0,1100,200))
     
 
 
