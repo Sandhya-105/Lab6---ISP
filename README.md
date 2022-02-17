@@ -1,7 +1,7 @@
 # Lab6---ISP
  
  ## Data and Data Sources
- For this assignment, I have created a text file(cities.csv) stating 10 european countries with its characteristics.
+ For this assignment, I have created a text file(cities.csv) stating 10 european countries with its characteristics. Source: https://www.wikipedia.org/
  * Name
  * Coordinates WGS 84 (EPSG:4326) (in decimal degrees)
  * Area (in square km)
@@ -13,7 +13,8 @@
  Then, an external data source containing the coastline of all the european nations. It's in geojson format. 
  
  ## UML Diagram 
- ![image](https://user-images.githubusercontent.com/94603960/152009797-95a1a23a-4219-40d3-b716-b49f49b74772.png)
+ ![image](https://user-images.githubusercontent.com/94603960/154519492-c074e064-6125-47a9-9412-162892461447.png)
+
 
 
 
